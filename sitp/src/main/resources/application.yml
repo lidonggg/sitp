@@ -1,0 +1,12 @@
+mybatis:
+  typeAliasesPackage: com.sitp.tjvideo.entity
+  mapperLocations: classpath:sqlMapper/*.xml
+spring:
+  datasource:
+    password: zhang
+    url: jdbc:mysql://localhost:3306/sitp_short_video?useUnicode=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=true
+    username: root
+    type: com.alibaba.druid.pool.DruidDataSource
+server:
+  port: 8082
+

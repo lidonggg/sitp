@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sitp.tjvideo.mapper.UserMapper" >
+    <resultMap id="BaseResultMap" type="com.sitp.tjvideo.entity.User" >
+        <id column="comment_id" property="commentId"/>
+        <result column="target_id" property="targetId" />
+        <result column="originator_id" property="originatorId"/>
+        <result column="content" property="content"/>
+        <result column="thumbs_num" property="thumbsNum"/>
+        <result column="type" property="type"/>
+    </resultMap>
+    <sql id="Base_Column_List" >
+        comment_id as commentId, target_id as targetId, content, type,thumbs_num as thumbsNum
+    </sql>
+</mapper>
